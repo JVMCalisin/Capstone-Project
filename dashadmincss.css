@@ -1,278 +1,279 @@
 .container {
-  background-color: #ffffff;  
-  border: 1px solid #ccc; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-  padding: 10px; 
-  margin-top: 10px; 
-}
-
-.current-date {
-    text-align: right; /* Aligns text to the right */
-    margin-top: -25px; /* Optional: Adds some spacing above */
-    color: #000000; /* Optional: Change text color as needed */
-}
-/* Main Content Styling */
-.main-content {
-  margin: 0 auto; /* Center the content horizontally */
-margin-left: 80px;
-  max-width: 90%; /* Optional: Set a maximum width to prevent it from becoming too wide */
-}
-/* Base styles for the announcement widget */
-.announcement-widget {
-    max-width: 50%;
-    max-height: 600px;
-    background-color: peachpuff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    overflow-y: auto;
-    box-sizing: border-box; /* Ensures padding is included in the height */
-}
-
-
-.announcement-widget h2 {
-    text-align: center;
-}
-
-.announcement-widget form {
-    display: flex;
-    flex-direction: column;
-}
-
-.announcement-widget textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    resize: none;
-    height: 100px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.announcement-widget button {
-    padding: 10px;
-    background-color: #ff8b2c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.announcement-widget button:hover {
-    background-color: #ffa733; /* Lighter shade for hover */
-}
-
-.announcement-widget table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.announcement-widget th, 
-.announcement-widget td {
-    padding: 15px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-.announcement-widget thead {
-    background-color: #ff8b2c;
-}
-
-
-/* Table styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 16px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-
-thead {
-    background-color: #007bff;
-    color: white;
-}
-
-thead th {
-    padding: 15px;
-    text-align: left;
-    font-weight: bold;
-}
-
-tbody td {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-    color: #333;
-}
-
-tbody tr:hover {
-    background-color: peachpuff;
-}
-
-tbody td a {
-    text-decoration: none;
-    color: #007bff;
-    margin-right: 10px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-tbody td a:hover {
-    color: #0056b3;
-}
-
-/* Empty table styling */
-tbody tr td[colspan="4"] {
-    text-align: center;
-    color: #888;
-    padding: 20px;
-}
-.recent-payments {
-    padding: 20px;
-    background-color: peachpuff; /* Change background to pure white for cleaner look */
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    font-family: 'Arial', sans-serif; /* Ensure consistent font */
-    max-height: 600px; /* Optional: Add height limit */
-    overflow-y: auto; /* Add scroll if content exceeds the height */
-    box-sizing: border-box; /* Include padding and border in the height */
-}
-
-.recent-payments h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-    font-weight: bold; /* Bold text for headings */
-}
-
-.payment {
-    display: flex;
-    align-items: center;
-    background-color: blanchedalmond;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0; /* Increase padding for better spacing */
-}
-
-.payment img {
-    width: 120px; /* Increased size for a more prominent view */
-    height: 120px; 
-    object-fit: cover;
-    border-radius: 8px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-    cursor: pointer; /* Add cursor pointer for clickable effect */
-
-}
-
-.payment-details {
-    flex: 1;
-}
-
-.payment-details p {
-    margin: 5px 0;
-    color: #555;
-}
-
-.payment-details span {
-    font-weight: bold;
-    color: #333;
-    display: block; /* Ensure each span is on its own line */
-}
-
-/* Parent container for announcements and recent payments */
-.flex-container {
-    display: flex;
-    justify-content: space-between; /* Adjust space between them */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-}
-
-/* Update your existing styles */
-.announcement-widget, .recent-payments {
-    width: 48%; /* Adjust width as needed */
-    margin: 10px; /* Add some margin for spacing */
-}
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1000; /* Sit on top */
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-.hidden-row {
-    display: none;
-}
-
-
-
-
-
-/* Responsive design */
-@media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-        width: 100%;
-    }
-
-    thead {
-        display: none;
-    }
-
-    tbody td {
-        padding: 10px;
-        border-bottom: 1px solid #eee;
-        position: relative;
-    }
-
-    tbody td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        font-weight: bold;
-        color: #555;
-    }
-}
-
+    background-color: #ffffff;  
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    margin-top: 10px; 
+  }
+  
+  .current-date {
+      text-align: right; /* Aligns text to the right */
+      margin-top: -25px; /* Optional: Adds some spacing above */
+      color: #000000; /* Optional: Change text color as needed */
+  }
+  /* Main Content Styling */
+  .main-content {
+    margin: 0 auto; /* Center the content horizontally */
+  margin-left: 80px;
+    max-width: 90%; /* Optional: Set a maximum width to prevent it from becoming too wide */
+  }
+  /* Base styles for the announcement widget */
+  .announcement-widget {
+      max-width: 50%;
+      max-height: 600px;
+      background-color: peachpuff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+      overflow-y: auto;
+      box-sizing: border-box; /* Ensures padding is included in the height */
+  }
+  
+  
+  .announcement-widget h2 {
+      text-align: center;
+  }
+  
+  .announcement-widget form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .announcement-widget textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      resize: none;
+      height: 100px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+  .announcement-widget button {
+      padding: 10px;
+      background-color: #ff8b2c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .announcement-widget button:hover {
+      background-color: #ffa733; /* Lighter shade for hover */
+  }
+  
+  .announcement-widget table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+  }
+  
+  .announcement-widget th, 
+  .announcement-widget td {
+      padding: 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+  }
+  
+  .announcement-widget thead {
+      background-color: #ff8b2c;
+  }
+  
+  
+  /* Table styling */
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 16px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+  }
+  
+  thead {
+      background-color: #007bff;
+      color: white;
+  }
+  
+  thead th {
+      padding: 15px;
+      text-align: left;
+      font-weight: bold;
+  }
+  
+  tbody td {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      color: #333;
+  }
+  
+  tbody tr:hover {
+      background-color: peachpuff;
+  }
+  
+  tbody td a {
+      text-decoration: none;
+      color: #007bff;
+      margin-right: 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+  }
+  
+  tbody td a:hover {
+      color: #0056b3;
+  }
+  
+  /* Empty table styling */
+  tbody tr td[colspan="4"] {
+      text-align: center;
+      color: #888;
+      padding: 20px;
+  }
+  .recent-payments {
+      padding: 20px;
+      background-color: peachpuff; /* Change background to pure white for cleaner look */
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+      font-family: 'Arial', sans-serif; /* Ensure consistent font */
+      max-height: 600px; /* Optional: Add height limit */
+      overflow-y: auto; /* Add scroll if content exceeds the height */
+      box-sizing: border-box; /* Include padding and border in the height */
+  }
+  
+  .recent-payments h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+      font-weight: bold; /* Bold text for headings */
+  }
+  
+  .payment {
+      display: flex;
+      align-items: center;
+      background-color: blanchedalmond;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0; /* Increase padding for better spacing */
+  }
+  
+  .payment img {
+      width: 120px; /* Increased size for a more prominent view */
+      height: 120px; 
+      object-fit: cover;
+      border-radius: 8px;
+      margin-left: 20px;
+      margin-right: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+      cursor: pointer; /* Add cursor pointer for clickable effect */
+  
+  }
+  
+  .payment-details {
+      flex: 1;
+  }
+  
+  .payment-details p {
+      margin: 5px 0;
+      color: #555;
+  }
+  
+  .payment-details span {
+      font-weight: bold;
+      color: #333;
+      display: block; /* Ensure each span is on its own line */
+  }
+  
+  /* Parent container for announcements and recent payments */
+  .flex-container {
+      display: flex;
+      justify-content: space-between; /* Adjust space between them */
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  /* Update your existing styles */
+  .announcement-widget, .recent-payments {
+      width: 48%; /* Adjust width as needed */
+      margin: 10px; /* Add some margin for spacing */
+  }
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1000; /* Sit on top */
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+  }
+  
+  .modal-content, #caption {
+      animation-name: zoom;
+      animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+      from {transform: scale(0)}
+      to {transform: scale(1)}
+  }
+  
+  .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  .hidden-row {
+      display: none;
+  }
+  
+  
+  
+  
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+          display: block;
+          width: 100%;
+      }
+  
+      thead {
+          display: none;
+      }
+  
+      tbody td {
+          padding: 10px;
+          border-bottom: 1px solid #eee;
+          position: relative;
+      }
+  
+      tbody td:before {
+          content: attr(data-label);
+          position: absolute;
+          left: 10px;
+          font-weight: bold;
+          color: #555;
+      }
+  }
+  
+  

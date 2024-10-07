@@ -96,9 +96,9 @@ p.no-appointments {
     display: none;
 }
 .page-link.active {
-    background-color: #007BFF; /* Primary color for active link */
+    background-color: #fd8326; /* Primary color for active link */
     color: white; /* White text color */
-    border: 1px solid #007BFF; /* Match border color with active background */
+    border: 1px solid #fd8326; /* Match border color with active background */
 }
 #pagination {
     margin-top: 20px;
@@ -108,14 +108,14 @@ p.no-appointments {
     display: inline-block; /* Ensure pagination links are inline */
     margin: 0 8px; /* Space between pagination links */
     text-decoration: none; /* Remove underline from links */
-    color: #007BFF; /* Link color */
+    color: #fd8326; /* Link color */
     padding: 8px 12px; /* Padding inside pagination links */
-    border: 1px solid #007BFF; /* Blue border to match theme */
+    border: 1px solid #fd8326; /* Blue border to match theme */
     border-radius: 4px; /* Rounded corners */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 #pagination a.active {
-    background-color: #007BFF; /* Active background color */
+    background-color: #fd8326; /* Active background color */
     color: white; /* White text color */
 }
 #pagination a:hover {
@@ -127,15 +127,15 @@ p.no-appointments {
     text-align: center;
     width: 50px;
     padding: 8px;
-    color: #007BFF; /* Blue text color */
-    border: 1px solid #007BFF; /* Blue border */
+    color: #000000; /* Blue text color */
+    border: 1px solid #fd8326; /* Blue border */
     border-radius: 4px; /* Rounded corners */
     margin: 0 8px; /* Space around the input */
 }
 
 /* Button styling */
 #pagination button {
-    background-color: #007BFF; /* Blue background */
+    background-color: #fd8326; /* Blue background */
     color: white; /* White text */
     border: none; /* Remove border */
     padding: 8px 12px; /* Add padding */
@@ -151,8 +151,8 @@ p.no-appointments {
 
 #pagination button:hover {
     background-color: white; /* White background on hover */
-    color: #007BFF; /* Blue text on hover */
-    border: 1px solid #007BFF; /* Blue border on hover */
+    color: #fd8326; /* Blue text on hover */
+    border: 1px solid #fd8326; /* Blue border on hover */
 }
 
 #pagination button:disabled {
@@ -162,7 +162,7 @@ p.no-appointments {
 }
 
 #pagination input[type="number"] {
-    border: 1px solid #007BFF; /* Blue border */
+    border: 1px solid #ffd000; /* Blue border */
     border-radius: 4px; /* Rounded corners */
     padding: 5px;
     font-size: 14px;

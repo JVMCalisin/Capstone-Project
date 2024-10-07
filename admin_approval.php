@@ -186,6 +186,33 @@ $total_pages = ceil($total_appointments / $records_per_page);
     </div>
 </div>
 
+<div class="legend-container">
+  <div class="legend-item">
+    <span class="legend-color blue"></span>
+    <span>Clubhouse Court</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-color green"></span>
+    <span>Townhouse Court</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-color coral"></span>
+    <span>Clubhouse Swimming Pool</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-color purple"></span>
+    <span>Townhouse Swimming Pool</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-color pink"></span>
+    <span>Consultation</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-color gray"></span>
+    <span>Bluehouse Court</span>
+  </div>
+</div>
+
 
         <div class="container">
       

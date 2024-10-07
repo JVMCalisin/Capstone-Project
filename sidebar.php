@@ -1,4 +1,5 @@
 <?php
+
 // Start session if not already started
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -17,6 +18,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
 
 // Ensure admin_id is set in the session
 if (!isset($_SESSION['admin_id'])) {
@@ -52,8 +54,6 @@ $stmt->close();
 // Default profile image handling
 $default_image = 'profile.png';
 $profile_image = isset($admin['profile_image']) && !empty($admin['profile_image']) ? $admin['profile_image'] : $default_image;
-
-// Do not close the connection here if it is needed in another script
 
 ?>
 

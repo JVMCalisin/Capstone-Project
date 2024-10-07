@@ -301,6 +301,9 @@ a{
 
     .balance-section {
         gap: 10px; /* Reduce gap */
+        flex-flow: column;
+        width: 36vh;
+
     }
 
     .payment-schedule input {

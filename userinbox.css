@@ -12,7 +12,7 @@ body {
 }
 
 .inbox-container {
-    max-width: 90vw; /* Adjusted for better responsiveness */
+    max-width: 80vw; /* Adjusted for better responsiveness */
     margin: 20px auto; /* Centered and margin auto for consistency */
     padding: 20px;
     background-color: peachpuff;
@@ -115,7 +115,9 @@ h1 {
     }
 
     .modal-content {
-        width: 100%; /* Full width modal on smaller screens */
+        width: 35%;
+        margin-top: 15vh;
+        margin-right: 32vh;
     }
 
     .pagination a {

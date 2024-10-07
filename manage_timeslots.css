@@ -208,3 +208,34 @@ textarea:focus {
 textarea::-webkit-resizer {
     display: none;
 }
+.id-legend-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .id-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .id-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .id-1 { background-color: blue; }
+  .id-2 { background-color: green; }
+  .id-3 { background-color: coral; }
+  .id-4 { background-color: purple; }
+  .id-5 { background-color: pink; }
+  .id-6 { background-color: gray; }
+  

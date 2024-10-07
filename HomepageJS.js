@@ -73,13 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Auto slide every 5 seconds
     setInterval(nextSlide, 5000);
 });
-    function toggleMenu() {
-        // Toggle the active class for burger menu and navLinks
-        const burgerMenu = document.getElementById('burgerMenu');
-        const navLinks = document.getElementById('navLinks');
-        burgerMenu.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    }
+
 
 
 

@@ -242,6 +242,34 @@ $conn->close();
                     <label for="date">Date:</label>
                     <input type="date" id="date" name="date" required>
                 </div>
+    <div class="id-legend-container">
+    <h2> Amenity ID# Color Legend</h2>
+  <div class="id-legend-item">
+    <div class="id-circle id-1">1</div>
+    <span>Clubhouse Court</span>
+  </div>
+  <div class="id-legend-item">
+    <div class="id-circle id-2">2</div>
+    <span>Townhouse Court</span>
+  </div>
+  <div class="id-legend-item">
+    <div class="id-circle id-3">3</div>
+    <span>Clubhouse Swimming Pool</span>
+  </div>
+  <div class="id-legend-item">
+    <div class="id-circle id-4">4</div>
+    <span>Townhouse Swimming Pool</span>
+  </div>
+  <div class="id-legend-item">
+    <div class="id-circle id-5">5</div>
+    <span>Consultation</span>
+  </div>
+  <div class="id-legend-item">
+    <div class="id-circle id-6">6</div>
+    <span>Bluehouse Court</span>
+  </div>
+</div>
+
                 <div>
                     <label for="amenity_id">Amenity ID:</label>
                     <input type="number" id="amenity_id" name="amenity_id" min="1" max="6" required>

@@ -50,7 +50,6 @@ $result = $conn->query($sql);
     <title>Password Reset Requests</title>
     <link rel="stylesheet" href="homeownercss.css">
 </head>
-<?php include 'sidebar.php'; ?>
 <body>
 
     
@@ -139,6 +138,7 @@ $result = $conn->query($sql);
             <?php endif; ?>
         </div>
     </div>
+    <?php include 'sidebar.php'; ?>
 </body>
 </html>
 
